@@ -1,0 +1,5 @@
+#! /bin/sh
+
+for file in $(ls "$XDG_CONFIG_HOME"/erichdongubler/gnome3/dconf/*); do
+	dconf load / < "$file"
+done
